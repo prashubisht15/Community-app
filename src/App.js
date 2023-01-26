@@ -1,9 +1,9 @@
 import React from "react";
-import MultipleAccount from "./Component/MultipleAccount";
+import Home from "./Home"
 function App() {
   return (
     <div className="App">
-      <MultipleAccount/>
+      <Home/>
     </div>
   );
 }

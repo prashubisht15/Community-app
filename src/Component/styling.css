@@ -1,66 +1,97 @@
 .account-container{
     background-color: rgb(238, 238, 238);
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 400px;
+    height: 450px;
     width: 30vw;
     border: 1px solid grey;
     border-radius: 20px;
-    
 }
+    
 .account-box{
-    height: 60%;
+    width: 100%;
+    height: 90%;
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: white;
     border-radius: 20px;
 }
 .account-display{
-    height: 20%;
-    display: flex;
-    margin: 1rem auto;
-    margin-bottom: 5px solid black;
+    border-bottom:1px solid rgb(185, 185, 185);
+    padding-bottom: 1px;
 }
+.account-display:hover{
+    background-color: rgb(241, 239, 239);
+    cursor: pointer;
+    border-radius:20px;
+}
+
 h1{
     font-size: 2.5rem;
     font-weight: 350;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    margin: 5px 0;
 }
 h3{
     width: 100%;
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:medium;
 }
 img {
     object-fit: contain;
     border-radius: 50%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1020px) {
     .account-container{
         background-color: rgb(233, 231, 235);
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        height: 300px;
         width: 40vw;
+        height: 300px;
         border: 1px solid grey;
         border-radius: 20px;
+        margin:40px 5px;
     }
     h1 {
         font-size: 1.5rem;
     }
     .account-box{
-        height: 75%;
+        height: 85%;
+    }
+}
+@media (max-width: 600px) {
+    .account-container{
+        background-color: rgb(233, 231, 235);
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 400px;
+        width: 70vw;
+        border: 1px solid grey;
+        border-radius: 20px;
+        margin:40px 5px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .account-box{
+        height: 90%;
     }
 }
 /* Webkit browsers */
 ::-webkit-scrollbar {
-    width: 0.5em;
+    width: 0.2em;
     background-color: transparent;
 }
 
