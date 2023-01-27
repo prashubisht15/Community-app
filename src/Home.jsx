@@ -9,7 +9,10 @@ const Home = () => {
   const url = "https://panorbit.in/api/users.json";
   const [selectedAccount, setSelectedAccount] = useState({});
   const [allAccount, setAllAccount] = useState([]);
-
+  const [changeTab, setChangeTab] = useState('Profile');
+  const handleTab = (e) => {
+    setChangeTab(e);
+  };
   const performApiCall = async () => {
     try {
       const response = await axios.get(url);
@@ -22,11 +25,12 @@ const Home = () => {
   useEffect(() => {
     performApiCall();
   }, []);
+
   return (
     <>
       <Router>
         <AccountsContext.Provider
-          value={{ allAccount, selectedAccount, setSelectedAccount }}
+          value={{ allAccount, selectedAccount, setSelectedAccount, changeTab, setChangeTab, handleTab }}
         >
           <Routes>
             <Route path="/" element={<MultipleAccount />} />
