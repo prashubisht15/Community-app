@@ -72,24 +72,24 @@ body {
   height: 100vh;
   position: relative;
 }
+
 .Navbar {
   width: 22vw;
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    13deg,
-    rgb(11, 7, 81) 0%,
-    rgba(99, 25, 226, 1) 50%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: linear-gradient(13deg,
+      rgb(11, 7, 81) 0%,
+      rgba(99, 25, 226, 1) 50%,
+      rgba(0, 212, 255, 1) 100%);
   border-radius: 20px;
 }
 
 .tab-list {
   width: 100%;
 }
-.tab-list > * {
+
+.tab-list>* {
   list-style-type: none;
   font-size: medium;
   line-height: 3;
@@ -99,11 +99,13 @@ body {
   margin: 0 15%;
   transition: transform 0.3s;
 }
-.tab-list > *:hover {
+
+.tab-list>*:hover {
   color: rgb(200, 241, 241);
   cursor: pointer;
   transform: scale(1.3);
 }
+
 .inner-layout {
   margin-left: 20px;
   width: 100%;
@@ -131,6 +133,7 @@ body {
     height: 85%;
   }
 }
+
 @media (max-width: 600px) {
   .account-container {
     background-color: rgb(233, 231, 235);

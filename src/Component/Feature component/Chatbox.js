@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import { Box } from "@mui/material";
 import { AccountsContext } from "../../Home";
-import ForumIcon from '@mui/icons-material/Forum';
+import ForumIcon from "@mui/icons-material/Forum";
 import "./featurebox.css";
 
 const Chatbox = () => {
   const [isActive, setIsActive] = useState(true);
-  const { allAccount} = useContext(AccountsContext);
+  const { allAccount } = useContext(AccountsContext);
   function toggleActive() {
     setIsActive(!isActive);
   }
