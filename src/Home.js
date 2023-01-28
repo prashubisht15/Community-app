@@ -11,8 +11,7 @@ const Home = () => {
   const [allAccount, setAllAccount] = useState([]);
   const [changeTab, setChangeTab] = useState("Profile");
   const [open, setOpen] = useState(false);
-  
-  
+
   const performApiCall = async () => {
     try {
       const response = await axios.get(url);
@@ -37,7 +36,7 @@ const Home = () => {
             changeTab,
             setChangeTab,
             open,
-            setOpen
+            setOpen,
           }}
         >
           <Routes>

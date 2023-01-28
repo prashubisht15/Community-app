@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Mylocation = ({lat,lng}) => {
+const Mylocation = ({ lat, lng }) => {
   useEffect(() => {
     const ifameData = document.getElementById("iframeId");
     ifameData.src = `https://maps.google.com/maps?q=${lat},${lng}&hl=es;&output=embed`;

@@ -6,11 +6,12 @@ import "./styling.css";
 
 const MultipleAccount = () => {
   const navigate = useNavigate();
-  const { allAccount, setSelectedAccount, setOpen, setChangeTab } = useContext(AccountsContext);
+  const { allAccount, setSelectedAccount, setOpen, setChangeTab } =
+    useContext(AccountsContext);
   const handleSelect = (account) => {
     setSelectedAccount(account);
-    setOpen(false)
-    setChangeTab('Profile');
+    setOpen(false);
+    setChangeTab("Profile");
     navigate(`/profile/`);
   };
 
@@ -40,7 +41,6 @@ const MultipleAccount = () => {
           ))}
         </Box>
       </Box>
-      
     </>
   );
 };

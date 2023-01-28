@@ -1,17 +1,18 @@
 import React, { useContext } from "react";
 import { AccountsContext } from "../../Home";
-import { Box,Modal,Button } from "@mui/material";
+import { Box, Modal, Button } from "@mui/material";
 import "./ProfileContent.css";
 import SignOut from "../Feature component/SignOut";
 
 const ProfileHeader = () => {
-  const { selectedAccount, changeTab, setOpen, open } = useContext(AccountsContext);
+  const { selectedAccount, changeTab, setOpen, open } =
+    useContext(AccountsContext);
   const account = selectedAccount;
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
     <>
-      <Box className="top-bar" >
+      <Box className="top-bar">
         <h2 id="change-tab">{changeTab}</h2>
         <Box className="top-bar-box" onClick={handleOpen}>
           <img
@@ -24,7 +25,7 @@ const ProfileHeader = () => {
       </Box>
 
       <Modal open={open} onClose={handleClose}>
-        <SignOut/>
+        <SignOut />
       </Modal>
     </>
   );
