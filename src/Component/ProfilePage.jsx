@@ -1,23 +1,31 @@
 import React, { useContext } from "react";
 import { AccountsContext } from "../Home";
-import ProfileHeader from "./ProfileHeader";
+import ProfileHeader from "./ProfileContent/ProfileHeader";
+import ProfileDetails from "./ProfileContent/ProfileDetails";
 import { Box } from "@mui/material";
 import "./styling.css";
 
 const ProfilePage = () => {
-  const { selectedAccount, changeTab, handleTab } =
+  const { selectedAccount, changeTab, setChangeTab } =
   useContext(AccountsContext);
+  const handleTab = (e) => {
+    setChangeTab(e);
+  };
+  console.log(changeTab)
   return (
     <Box className="Outer-Box">
       <Box className="Navbar">
-        <ul>
-          <li onClick={handleTab("Profile")}>Profile</li>
-          <li onClick={handleTab("Posts")}>Posts</li>
-          <li onClick={handleTab("Gallery")}>Gallery</li>
-          <li onClick={handleTab("ToDo")}>ToDo</li>
+        <ul className="tab-list">
+          <li onClick={()=>handleTab("Profile")}>Profile</li>
+          <li onClick={()=>handleTab("Posts")}>Posts</li>
+          <li onClick={()=>handleTab("Gallery")}>Gallery</li>
+          <li onClick={()=>handleTab("ToDo")}>ToDo</li>
         </ul>
       </Box>
-      <ProfileHeader changeTab={changeTab} image={selectedAccount.profilepicture}/>
+      <Box className="inner-layout">
+        <ProfileHeader changeTab={changeTab} account={selectedAccount}/>
+        <ProfileDetails account={selectedAccount}/>
+      </Box>
     </Box>
   );
 };

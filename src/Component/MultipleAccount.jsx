@@ -22,18 +22,18 @@ const MultipleAccount = () => {
         ></path>
       </svg>
       <Box maxWidth="xs" className="account-container">
-        <h1>Select an account</h1>
+        <h1 id="select">Select an account</h1>
         <Box className="account-box">
           {allAccount.map((account) => (
             <Box
               className="account-display"
               display="flex"
               key={account.id}
-              sx={{ height: "60px", margin: "5px 10px" }}
+              sx={{ height: "35px", margin: "5px 25px" }}
               onClick={() => handleSelect(account)}
             >
-              <img src={account.profilepicture} alt="avatar" />
-              <h3>{account.name}</h3>
+              <img id="profile-img" src={account.profilepicture} alt="avatar" />
+              <h3 id="profile-name">{account.name}</h3>
             </Box>
           ))}
         </Box>

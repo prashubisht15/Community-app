@@ -10,9 +10,7 @@ const Home = () => {
   const [selectedAccount, setSelectedAccount] = useState({});
   const [allAccount, setAllAccount] = useState([]);
   const [changeTab, setChangeTab] = useState('Profile');
-  const handleTab = (e) => {
-    setChangeTab(e);
-  };
+ 
   const performApiCall = async () => {
     try {
       const response = await axios.get(url);
@@ -21,7 +19,7 @@ const Home = () => {
       console.log(err);
     }
   };
-
+  
   useEffect(() => {
     performApiCall();
   }, []);
@@ -30,7 +28,7 @@ const Home = () => {
     <>
       <Router>
         <AccountsContext.Provider
-          value={{ allAccount, selectedAccount, setSelectedAccount, changeTab, setChangeTab, handleTab }}
+          value={{ allAccount, selectedAccount, setSelectedAccount, changeTab, setChangeTab }}
         >
           <Routes>
             <Route path="/" element={<MultipleAccount />} />

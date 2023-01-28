@@ -1,131 +1,159 @@
 /* Css start for Multiple Account Page */
-body{
-    background: rgb(255, 255, 255);
+body {
+  background: rgb(255, 255, 255);
 }
-.account-container{
-    background-color: rgb(238, 238, 238);
+
+.account-container {
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 455px;
+  width: 35vw;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+
+.account-box {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.account-display {
+  border-bottom: 1px solid rgb(185, 185, 185);
+  padding-bottom: 1px;
+}
+
+.account-display:hover {
+  background-color: rgb(241, 239, 239);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#select {
+  font-size: 1rem;
+  font-weight: 350;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  margin: 5px 0;
+  line-height: 3;
+  color: #515151;
+}
+
+#profile-name {
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Times New Roman", Times, serif;
+  color: #515151;
+  font-size: small;
+}
+
+#profile-img {
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+/* css end for multilple account*/
+
+/* css start for Profile Page */
+.Outer-Box {
+  /* border: 1px red solid; */
+  margin: 10px 20px;
+  display: flex;
+  height: 100vh;
+}
+.Navbar {
+  width: 22vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    13deg,
+    rgb(11, 7, 81) 0%,
+    rgba(99, 25, 226, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 20px;
+}
+
+.tab-list {
+  width: 100%;
+}
+.tab-list > * {
+  list-style-type: none;
+  font-size: medium;
+  line-height: 2.5;
+  border-bottom: 1px solid rgb(200, 241, 241);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(253, 255, 255);
+  margin: 0 10%;
+}
+
+.inner-layout {
+  margin-left: 20px;
+  /* border: 6px rgb(236, 13, 217) solid; */
+  width: 100%;
+}
+
+
+@media (max-width: 1020px) {
+  .account-container {
+    background-color: rgb(233, 231, 235);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 455px;
-    width: 35vw;
+    width: 40vw;
+    height: 300px;
     border: 1px solid grey;
-    border-radius: 15px;
-}
-    
-.account-box{
-    width: 100%;
-    height: 80%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: white;
     border-radius: 20px;
-}
-.account-display{
-    border-bottom:1px solid rgb(185, 185, 185);
-    padding-bottom: 1px;
-}
-.account-display:hover{
-    background-color: rgb(241, 239, 239);
-    cursor: pointer;
-    border-radius:20px;
-}
+    margin: 40px 5px;
+  }
 
-h1{
+  h1 {
     font-size: 1rem;
-    font-weight: 350;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: x-large;
-    margin: 5px 0;
-    line-height: 3;
-}
-h3{
-    width: 100%;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-family: 'Times New Roman', Times, serif;
-    font-size:medium;
-}
-img {
-    object-fit: contain;
-    border-radius: 50%;
-}
+  }
 
-@media (max-width: 1020px) {
-    .account-container{
-        background-color: rgb(233, 231, 235);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 40vw;
-        height: 300px;
-        border: 1px solid grey;
-        border-radius: 20px;
-        margin:40px 5px;
-    }
-    h1 {
-        font-size: 1rem;
-    }
-    .account-box{
-        height: 85%;
-    }
-}
-/* css end for multilple account*/
-
-/* css start for Profile Page */
-.Outer-Box{
-    margin:50px 50px;
-    width: 100%;
-}
-ul{
-    width: 100%;
-}
-li{
-    list-style-type: none;
-    font-size: larger;
-    line-height: 2.5;
-    border-bottom:1px solid rgb(200, 241, 241);
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(200, 241, 241);
-    margin:0 15%;
-}
-
-.Navbar{
-    width: 250px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: #5940c8;
-    border-radius: 20px;
+  .account-box {
+    height: 85%;
+  }
 }
 @media (max-width: 600px) {
-    .account-container{
-        background-color: rgb(233, 231, 235);
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        height: 400px;
-        width: 70vw;
-        border: 1px solid grey;
-        border-radius: 20px;
-        margin:40px 5px;
-    }
-    h1 {
-        font-size: 1rem;
-    }
-    .account-box{
-        height: 90%;
-    }
+  .account-container {
+    background-color: rgb(233, 231, 235);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 70vw;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 40px 5px;
+  }
+
+  #select {
+    font-size: 1rem;
+  }
+
+  .account-box {
+    height: 90%;
+  }
 }
+
 /* Webkit browsers */
 ::-webkit-scrollbar {
-    width: 0.2em;
-    background-color: transparent;
+  width: 0.2em;
+  background-color: transparent;
 }
 
 /* Track */
