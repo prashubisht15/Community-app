@@ -27,12 +27,14 @@ body {
 .account-display {
   border-bottom: 1px solid rgb(185, 185, 185);
   padding-bottom: 1px;
+  transition: transform 0.3s;
 }
 
 .account-display:hover {
-  background-color: rgb(241, 239, 239);
+  background-color: rgb(247, 247, 247);
   cursor: pointer;
   border-radius: 20px;
+  transform: scale(1.05);
 }
 
 #select {
@@ -61,7 +63,6 @@ body {
   border-radius: 50%;
 }
 
-
 /* css end for multilple account*/
 
 /* css start for Profile Page */
@@ -69,6 +70,7 @@ body {
   margin: 10px 20px;
   display: flex;
   height: 100vh;
+  position: relative;
 }
 .Navbar {
   width: 22vw;
@@ -95,18 +97,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(253, 255, 255);
   margin: 0 15%;
-  transition: transform .2s;
+  transition: transform 0.3s;
 }
-.tab-list>*:hover{
+.tab-list > *:hover {
   color: rgb(200, 241, 241);
   cursor: pointer;
-  transform: scale(1.2)
+  transform: scale(1.3);
 }
 .inner-layout {
   margin-left: 20px;
   width: 100%;
 }
-
 
 @media (max-width: 1020px) {
   .account-container {

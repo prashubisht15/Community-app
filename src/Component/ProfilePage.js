@@ -5,6 +5,7 @@ import NoContent from "./ProfileContent/NoContent";
 import { Box } from "@mui/material";
 import "./styling.css";
 import ProfileGrid from "./ProfileContent/ProfileGrid";
+import Chatbox from "./Feature component/Chatbox";
 
 
 const ProfilePage = () => {
@@ -15,6 +16,7 @@ const ProfilePage = () => {
   };
   console.log(changeTab)
   return (
+    <>
     <Box className="Outer-Box">
       <Box className="Navbar">
         <ul className="tab-list">
@@ -33,7 +35,9 @@ const ProfilePage = () => {
         )
         }
       </Box>
+      <Chatbox/>
     </Box>
+      </>
   );
 };
 export default ProfilePage;

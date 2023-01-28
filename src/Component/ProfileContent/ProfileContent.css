@@ -93,8 +93,8 @@ h4 {
 .geomap {
   border-radius: 20px;
   overflow: hidden;
-  height: 300px;
-  width: 90%;
+  height: 250px;
+  width: 80%;
 }
 .rest-tabs{
   display: flex;
