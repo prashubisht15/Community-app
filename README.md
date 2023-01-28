@@ -16,7 +16,7 @@ You may also see any lint errors in the console.
 
 ### `npm install`
 
-Run this command to install all the dependecies...\
+Run this command to install all the dependecies...
 
 ### Dependencies
 Mainly, the Material UI is used and few other dependecies.
