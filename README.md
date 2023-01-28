@@ -22,10 +22,10 @@ Run this command to install all the dependecies...\
 Mainly, the Material UI is used and few other dependecies\
 
 1. npm install @mui/material @emotion/react @emotion/styled\
-this is used for Box, Button, Grid, Modal and styling
+this is used for Box, Button, Grid, Modal and styling\
 
 2. npm install @mui/icons-material]
-this is used to use icons
+this is used to use icons\
 
 3.npm install axios
 this is used to get the data from API
