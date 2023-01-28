@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Community-app/static/css/main.7e769926.css",
+    "main.js": "/Community-app/static/js/main.cb0895ed.js",
+    "static/js/787.c53666f9.chunk.js": "/Community-app/static/js/787.c53666f9.chunk.js",
+    "index.html": "/Community-app/index.html",
+    "main.7e769926.css.map": "/Community-app/static/css/main.7e769926.css.map",
+    "main.cb0895ed.js.map": "/Community-app/static/js/main.cb0895ed.js.map",
+    "787.c53666f9.chunk.js.map": "/Community-app/static/js/787.c53666f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e769926.css",
+    "static/js/main.cb0895ed.js"
+  ]
+}
