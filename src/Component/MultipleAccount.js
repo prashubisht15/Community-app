@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
 import { Box } from "@mui/material";
 import { AccountsContext } from "../Home";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./styling.css";
 
 const MultipleAccount = () => {
   const navigate = useNavigate();
-  const { allAccount, setSelectedAccount } = useContext(AccountsContext);
+  const { allAccount, setSelectedAccount, setOpen, setChangeTab } = useContext(AccountsContext);
   const handleSelect = (account) => {
     setSelectedAccount(account);
+    setOpen(false)
+    setChangeTab('Profile');
     navigate(`/profile/`);
   };
 

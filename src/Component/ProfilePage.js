@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import { AccountsContext } from "../Home";
 import ProfileHeader from "./ProfileContent/ProfileHeader";
-import ProfileDetails from "./ProfileContent/ProfileDetails";
+import NoContent from "./ProfileContent/NoContent";
 import { Box } from "@mui/material";
 import "./styling.css";
+import ProfileGrid from "./ProfileContent/ProfileGrid";
+
 
 const ProfilePage = () => {
-  const { selectedAccount, changeTab, setChangeTab } =
+  const { changeTab, setChangeTab } =
   useContext(AccountsContext);
   const handleTab = (e) => {
     setChangeTab(e);
@@ -23,8 +25,13 @@ const ProfilePage = () => {
         </ul>
       </Box>
       <Box className="inner-layout">
-        <ProfileHeader changeTab={changeTab} account={selectedAccount}/>
-        <ProfileDetails account={selectedAccount}/>
+        <ProfileHeader />
+        {changeTab === 'Profile' ?(
+          <ProfileGrid/>
+        ):(
+          <NoContent/>
+        )
+        }
       </Box>
     </Box>
   );

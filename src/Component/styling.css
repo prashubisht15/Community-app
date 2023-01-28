@@ -66,7 +66,6 @@ body {
 
 /* css start for Profile Page */
 .Outer-Box {
-  /* border: 1px red solid; */
   margin: 10px 20px;
   display: flex;
   height: 100vh;
@@ -91,16 +90,20 @@ body {
 .tab-list > * {
   list-style-type: none;
   font-size: medium;
-  line-height: 2.5;
+  line-height: 3;
   border-bottom: 1px solid rgb(200, 241, 241);
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(253, 255, 255);
-  margin: 0 10%;
+  margin: 0 15%;
+  transition: transform .2s;
 }
-
+.tab-list>*:hover{
+  color: rgb(200, 241, 241);
+  cursor: pointer;
+  transform: scale(1.2)
+}
 .inner-layout {
   margin-left: 20px;
-  /* border: 6px rgb(236, 13, 217) solid; */
   width: 100%;
 }
 
