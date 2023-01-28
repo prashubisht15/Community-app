@@ -6,9 +6,9 @@ const ProfileGrid = () => {
   const { selectedAccount } = useContext(AccountsContext);
   const account = selectedAccount;
   return (
-    <Grid container sx={{ height: "90%", width: "100%" }}>
+    <Grid container sx={{ height: "90%", width: "100%" }} spacing={0}>
       <Grid Item xs={4} sm={4} md={4} className="first-grid">
-        <img id="big-profile-photo" src={account.profilepicture} />
+        <img id="big-profile-photo" src={account.profilepicture} alt="something wrong"/>
         <h4>{account.name}</h4>
         <p>
           <span className="first-part">Username : </span>

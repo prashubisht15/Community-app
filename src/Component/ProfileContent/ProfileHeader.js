@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { AccountsContext } from "../../Home";
-import { Box, Modal, Button } from "@mui/material";
+import { Box, Modal } from "@mui/material";
 import "./ProfileContent.css";
 import SignOut from "../Feature component/SignOut";
 
@@ -18,7 +18,7 @@ const ProfileHeader = () => {
           <img
             id="profile-image"
             src={account["profilepicture"]}
-            alt="no picture"
+            alt="nothing to show"
           />
           <p>{account["name"]}</p>
         </Box>

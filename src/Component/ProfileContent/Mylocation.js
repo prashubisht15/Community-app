@@ -12,6 +12,7 @@ const Mylocation = ({ lat, lng }) => {
         height="100%"
         width="100%"
         frameborder="0"
+        title="GeoLocation"
         border="0"
       ></iframe>
     </>
